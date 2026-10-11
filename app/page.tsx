@@ -242,23 +242,16 @@ export default function SupremePortfolio() {
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="bg-[#020005] text-zinc-100 min-h-screen selection:bg-amber-500/40 selection:text-amber-100 font-sans relative overflow-x-hidden">
       
-       {/* Animated Luxury Neon Glows */}
-       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <motion.div 
-          animate={{ scale: [1, 1.4, 1], rotate: [0, 180, 360], opacity: [0.15, 0.3, 0.15] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-40 -right-40 w-[750px] h-[750px] bg-gradient-to-br from-amber-500/20 via-orange-600/10 to-transparent rounded-full blur-[150px]" 
-        />
-        <motion.div 
-          animate={{ scale: [1, 1.5, 1], rotate: [360, 180, 0], opacity: [0.15, 0.25, 0.15] }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/2 -left-40 w-[750px] h-[750px] bg-gradient-to-tr from-purple-600/20 via-pink-600/10 to-transparent rounded-full blur-[150px]" 
-        />
-        <motion.div 
-          animate={{ scale: [1, 1.3, 1], x: [0, 80, 0] }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-10 right-1/4 w-[600px] h-[600px] bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-full blur-[150px]" 
-        />
+ {/* Animated Luxury Neon Glows - Mobile Performance Optimized */}
+ <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Glow 1 */}
+        <div className="absolute -top-40 -right-40 w-[350px] sm:w-[750px] h-[350px] sm:h-[750px] bg-amber-500/10 sm:bg-gradient-to-br sm:from-amber-500/20 sm:via-orange-600/10 sm:to-transparent rounded-full blur-[80px] sm:blur-[140px] transform-gpu" />
+
+        {/* Glow 2 */}
+        <div className="absolute top-1/2 -left-40 w-[350px] sm:w-[750px] h-[350px] sm:h-[750px] bg-purple-600/10 sm:bg-gradient-to-tr sm:from-purple-600/20 sm:via-pink-600/10 sm:to-transparent rounded-full blur-[80px] sm:blur-[140px] transform-gpu" />
+
+        {/* Glow 3 */}
+        <div className="absolute bottom-10 right-1/4 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-emerald-500/10 sm:bg-gradient-to-r sm:from-emerald-500/10 sm:to-teal-500/10 rounded-full blur-[80px] sm:blur-[140px] transform-gpu" />
       </div>
 
       {/* Header / Navbar */}
