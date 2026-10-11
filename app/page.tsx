@@ -143,7 +143,7 @@ export default function SupremePortfolio() {
       solution: lang === 'en' ? "Employed Laravel for robust backend roles and member data management, paired with a high-speed Vue.js frontend." : "توظيف Laravel لبناء هيكل خلفي قوي ومنظم يدير صلاحيات وبيانات الأعضاء، مع واجهة تفاعلية وسريعة باستخدام Vue.js لضمان تجربة مستخدم سلسة.",
       impact: lang === 'en' ? "Elevated collaboration and communication among club members, streamlining technical project showcases." : "رفع مستوى التعاون والتواصل بين أعضاء النادي، وتسهيل استعراض الأفكار والمشاريع التقنية بمرونة وكفاءة عالية.",
       tech: ["Laravel", "Vue.js", "Community Hub"],
-      link: "#",
+      link: "https://binx-tech.onrender.com/",
       img: "/binx-project.jpg"
     },
     {
@@ -156,7 +156,7 @@ export default function SupremePortfolio() {
       solution: lang === 'en' ? "Integrated Supabase and PostgreSQL for database and instant auth with admin guards, utilizing vite-plugin-pwa for offline service workers." : "دمج Supabase وPostgreSQL لإدارة البيانات والمصادقة الفورية مع حماية الإدارة، وتوظيف vite-plugin-pwa لتفعيل وضع standalone.",
       impact: lang === 'en' ? "Delivered a native-like user experience with extreme speed and instant data synchronization." : "تقديم تجربة مستخدم شبيهة بالتطبيقات الأصلية (Native) مع سرعة تصفح فائقة ومزامنة فورية للبيانات.",
       tech: ["Vue.js", "Supabase", "PWA", "Tailwind CSS"],
-      link: "https://binx-tech.onrender.com/",
+      link: "https://al-badar-real-estate.vercel.app/",
       img: "/albadr-realestate.jpg"
     },
     {
